@@ -1,6 +1,6 @@
 # **Formulario de votacion**
 
-Este proyecto es producto de una prueba técnica para postular a un trabajo en TI. 
+Este proyecto es producto de una prueba técnica para postular a un trabajo en TI y mi primer acercamiento a PHP. 
 
 ## **Requisitos previos**
 
