@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg
+PUBLIC "-//W3C//DTD SVG 1.1//EN"
+       "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg viewBox="482 37 843 477" width="361px" height="440px" xmlns="http://www.w3.org/2000/svg" version="1.1">
+   <line x1="722" y1="213" x2="712" y2="213" style="stroke:#0bf;stroke-width:1;"/>
+   <line x1="715" y1="94" x2="725" y2="94" style="stroke:#0bf;stroke-width:1;"/>
+   <line x1="712" y1="213" x2="715" y2="94" style="stroke:#0bf;stroke-width:1;"/>
+   <line x1="714.5" y1="213" x2="718.03553390593" y2="216.53553390593" style="stroke:#0bf;stroke-width:2;"/>
+   <line x1="714.5" y1="213" x2="718.03553390593" y2="209.46446609407" style="stroke:#0bf;stroke-width:2;"/>
+   <line x1="720" y1="94" x2="716.46446609407" y2="97.535533905933" style="stroke:#0bf;stroke-width:2;"/>
+   <line x1="720" y1="94" x2="716.46446609407" y2="90.464466094067" style="stroke:#0bf;stroke-width:2;"/>
+   <rect width="103" height="20" x="497" y="402" style="fill:#007;stroke:black;"/>
+   <text width="103" height="20" x="502" y="416" style="fill:#fff;" font-family="Arial" font-size="16px"> candidatos</text>
+   <rect width="103" height="20" x="497" y="422" style="fill:#aea;stroke:black;"/>
+   <text width="103" height="20" x="502" y="436" style="fill:black;" font-family="Arial" font-size="16px">id</text>
+   <rect width="103" height="20" x="497" y="442" style="fill:none;stroke:black;"/>
+   <text width="103" height="20" x="502" y="456" style="fill:black;" font-family="Arial" font-size="16px">candidatos</text>
+   <rect width="103" height="20" x="722" y="183" style="fill:#007;stroke:black;"/>
+   <text width="103" height="20" x="727" y="197" style="fill:#fff;" font-family="Arial" font-size="16px"> comunas</text>
+   <rect width="103" height="20" x="722" y="203" style="fill:none;stroke:black;"/>
+   <text width="103" height="20" x="727" y="217" style="fill:black;" font-family="Arial" font-size="16px">id</text>
+   <rect width="103" height="20" x="722" y="223" style="fill:none;stroke:black;"/>
+   <text width="103" height="20" x="727" y="237" style="fill:black;" font-family="Arial" font-size="16px">nom_comuna</text>
+   <rect width="103" height="20" x="500" y="310" style="fill:#007;stroke:black;"/>
+   <text width="103" height="20" x="505" y="324" style="fill:#fff;" font-family="Arial" font-size="16px"> encuesta</text>
+   <rect width="103" height="20" x="500" y="330" style="fill:#aea;stroke:black;"/>
+   <text width="103" height="20" x="505" y="344" style="fill:black;" font-family="Arial" font-size="16px">id</text>
+   <rect width="103" height="20" x="500" y="350" style="fill:none;stroke:black;"/>
+   <text width="103" height="20" x="505" y="364" style="fill:black;" font-family="Arial" font-size="16px">respuesta</text>
+   <rect width="103" height="20" x="725" y="64" style="fill:#007;stroke:black;"/>
+   <text width="103" height="20" x="730" y="78" style="fill:#fff;" font-family="Arial" font-size="16px"> region</text>
+   <rect width="103" height="20" x="725" y="84" style="fill:#aea;stroke:black;"/>
+   <text width="103" height="20" x="730" y="98" style="fill:black;" font-family="Arial" font-size="16px">id</text>
+   <rect width="103" height="20" x="725" y="104" style="fill:none;stroke:black;"/>
+   <text width="103" height="20" x="730" y="118" style="fill:black;" font-family="Arial" font-size="16px">nom_region</text>
+   <rect width="103" height="20" x="499" y="52" style="fill:#007;stroke:black;"/>
+   <text width="103" height="20" x="504" y="66" style="fill:#fff;" font-family="Arial" font-size="16px"> votantes</text>
+   <rect width="103" height="20" x="499" y="72" style="fill:#aea;stroke:black;"/>
+   <text width="103" height="20" x="504" y="86" style="fill:black;" font-family="Arial" font-size="16px">votantes</text>
+   <rect width="103" height="20" x="499" y="92" style="fill:none;stroke:black;"/>
+   <text width="103" height="20" x="504" y="106" style="fill:black;" font-family="Arial" font-size="16px">nombre</text>
+   <rect width="103" height="20" x="499" y="112" style="fill:none;stroke:black;"/>
+   <text width="103" height="20" x="504" y="126" style="fill:black;" font-family="Arial" font-size="16px">alias</text>
+   <rect width="103" height="20" x="499" y="132" style="fill:none;stroke:black;"/>
+   <text width="103" height="20" x="504" y="146" style="fill:black;" font-family="Arial" font-size="16px">rut</text>
+   <rect width="103" height="20" x="499" y="152" style="fill:none;stroke:black;"/>
+   <text width="103" height="20" x="504" y="166" style="fill:black;" font-family="Arial" font-size="16px">email</text>
+   <rect width="103" height="20" x="499" y="172" style="fill:none;stroke:black;"/>
+   <text width="103" height="20" x="504" y="186" style="fill:black;" font-family="Arial" font-size="16px">region</text>
+   <rect width="103" height="20" x="499" y="192" style="fill:none;stroke:black;"/>
+   <text width="103" height="20" x="504" y="206" style="fill:black;" font-family="Arial" font-size="16px">comuna</text>
+   <rect width="103" height="20" x="499" y="212" style="fill:none;stroke:black;"/>
+   <text width="103" height="20" x="504" y="226" style="fill:black;" font-family="Arial" font-size="16px">candidato</text>
+   <rect width="103" height="20" x="499" y="232" style="fill:none;stroke:black;"/>
+   <text width="103" height="20" x="504" y="246" style="fill:black;" font-family="Arial" font-size="16px">encuesta</text>
+</svg>

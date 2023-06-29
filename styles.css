@@ -1,0 +1,44 @@
+
+
+/* body {
+    background-color: rosybrown;
+} */
+
+main {
+    margin-top: 50px;
+    background-color:rgb(175, 246, 240);
+    border-radius: 10px;
+    border: solid lightblue;     
+}
+
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: left;
+    padding-right: 50px;
+   
+}
+
+.col-auto {
+    flex: 1 1;
+    margin-right: 20px; 
+}
+
+h1 {
+    padding-top: 20px;
+    text-align: center;
+   
+}
+
+.custom-height {
+    height: 40px; 
+    border-radius: 10px;
+    color: gray;
+    font-size: 15px;
+}
+
+
+    
+
+ 
