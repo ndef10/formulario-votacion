@@ -46,4 +46,4 @@ El proyecto solo se encuentra en local, con base de datos en MariaDB
 
 ## **Autor**
 
-Nilda Marcela DEfranchi Morales
+Nilda Marcela Defranchi Morales
