@@ -4,7 +4,7 @@ Este proyecto es producto de una prueba técnica para postular a un trabajo en T
 
 ## **Requisitos previos**
 
-1- Las dependencias requeridas para este proyecto son:
+**1- Las dependencias requeridas para este proyecto son:**
 
 - PHP: versión 8.1.18 
 
@@ -16,12 +16,13 @@ Este proyecto es producto de una prueba técnica para postular a un trabajo en T
 
 - Se crearon variables de entorno con la libreria: vlucas/phpdotenv
 
+- El archivo se llama formulario-votacion y se creo en \xampp\htdocs, y está disponible en la siguiente URL: **`http://localhost/formulario-votacion`** 
 
-2. Crear la base de datos y las tablas necesarias:
+-  Crear la base de datos y las tablas necesarias:
 
 - Script se encuentra en la carpeta SQL dentro del proyecto
 
-# Aqui una guía para importar es script
+### Aqui una guía para importar es script
 
 <details>
 <summary>Mostrar más</summary>
@@ -34,15 +35,13 @@ Abre una terminal o línea de comandos y accede al directorio donde se encuentra
 
 Utiliza el comando mysql seguido de los parámetros necesarios para conectarte a la base de datos. Por ejemplo, si estás trabajando en localhost con el usuario "root" y sin contraseña, el comando sería:
 
-css
-Copy code
+
 mysql -u root -p
 Si tienes una contraseña configurada para el usuario "root", se te solicitará ingresarla después de ejecutar el comando.
 
 Una vez que estés conectado a la base de datos, puedes importar el script SQL utilizando el comando source seguido de la ruta completa del archivo SQL. Por ejemplo:
 
-bash
-Copy code
+
 source /ruta/al/archivo.sql
 Asegúrate de reemplazar /ruta/al/archivo.sql con la ruta correcta hacia tu archivo SQL.
 
@@ -56,13 +55,13 @@ Recuerda que es recomendable realizar una copia de seguridad de tu base de datos
 
 </details>
 
-- El archivo se llama formulario-votacion y se creo en \xampp\htdocs, y está disponible en la siguiente URL: **`http://localhost/formulario-votacion`** 
 
-3. Documentacion sobre como iniciar el servido XAMPP y configurar la base de datos MariaDB:
+
+### Documentacion sobre como iniciar el servido XAMPP y configurar la base de datos MariaDB:
 
 -Estas son mis notas personales para la instalacionen el sistema operativo Linux con la Distribucion Fedora 36:
 
-# Para descargar xampp
+### Para descargar xampp
 
 <details>
 <summary>Mostrar más</summary>
@@ -81,21 +80,17 @@ luego ejecutamos sudo **./xampp-linux-x64-8.2.4-0-installer.run**
 
 y se abrira una ventana donde solo debemos dar siguiente hasta terminar y cerrar
 
-# Los archivos descargados se guardan en: **cd /opt/lampp**
+los archivos descargados se guardan en: **cd /opt/lampp**
 
 y al listar con **ls** podemos acceder a la carpeta **htdocs** aqui es donde se crearan los proyectos en php
 
-# para ejecutar la interfaz grafica se debe usar el sgte. comando: **sudo ./manager-linux-x64.run**
+para ejecutar la interfaz grafica se debe usar el sgte. comando: **sudo ./manager-linux-x64.run**
 
 en la interfaz grafica, pichar en **Manage Servers, start all** y se tiene que poner **verde** las tres pelotitas, si la ultima no se pone roja, es que falta instalar lib y se hace con este comando: 
 
-**sudo dnf install libnsl** (ya lo  instale)
+**sudo dnf install libnsl** 
 
-para probar que xampp funciona, ir al navegador y poner la siguiente URL: 
-
-http://localhost/dashboard/
-
-
+para probar que xampp funciona, ir al navegador y poner la siguiente URL: http://localhost/dashboard/
 
 en le link que dice **phpMyAdmin** es donde se trabaja normalmente y debe estar ok 
 
@@ -109,7 +104,7 @@ para poder crear carpetas aca hay que hacer la siguiente configuracion:
 - para ver lo editado en el navegador , voy a [localhost/hola.html](http://localhost/hola.html)
 - con **dolphin .** voy a la interfaz grafica para crear archivos
 
-en pampp, si voy a bin con cd bin puedo ver toda la lineas de comando y desde aca al poner el comando: **./php —version** obtengo la version que tengo instalada de php, para poder verla desde el inicio: 
+En pampp, si voy a bin con cd bin puedo ver toda la lineas de comando y desde aca al poner el comando: **./php —version** obtengo la version que tengo instalada de php, para poder verla desde el inicio: 
 
 - **sudo nano /etc/profile**
 
@@ -123,7 +118,9 @@ y abajo poner: php —version podemos ver la version de php desde aca y termina 
 s
 </details>
 
-## **Tecnologías utilizadas**
+
+
+### **Tecnologías utilizadas**
 
 - JavaScript
 - PHP versión 8.1.18
@@ -134,15 +131,20 @@ s
 - Git
 - vlucas/phpdotenv ^5.5
 
-## **Diseño**
+
+
+### **Diseño**
 
 El diseño de la interfaz se realizó apegandose al modelo otorgado por el futuro empleador y un poquito de contraste
 
 
-## **Despliegue**
+
+### **Despliegue**
 
 El proyecto solo se encuentra en local, con base de datos en MariaDB
 
-## **Autor**
+
+
+### **Autor**
 
 Nilda Marcela Defranchi Morales
