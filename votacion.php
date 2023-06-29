@@ -21,6 +21,8 @@ $comuna = $_POST['comuna'];
 $candidato = $_POST['candidato'];
 $encuesta = $_POST['encuesta'];
 
+$nombre_formateado = ucwords($nombre);
+
 $consulta = "SELECT candidatos FROM $t3_candidatos WHERE id = $candidato";
 $ejecutar_consulta = mysqli_query($conexion, $consulta);
 
@@ -59,7 +61,7 @@ if (isset($_POST['encuesta']) && is_array($_POST['encuesta'])) {
         } else {
             // inserta todos los datos en la base de datos
             $insertar = "INSERT INTO $t5_votantes (nombre, alias, rut, email, region, comuna, candidato, encuesta) 
-                         VALUES ('$nombre', '$alias', '$rut', '$email', '$nombre_region', '$nombre_comuna', '$nom_candidato', '$respuesta_texto')";
+                         VALUES ('$nombre_formateado', '$alias', '$rut', '$email', '$nombre_region', '$nombre_comuna', '$nom_candidato', '$respuesta_texto')";
 
             if (mysqli_query($conexion, $insertar)) {
                 echo "<h1>Datos insertados correctamente</h1>";
