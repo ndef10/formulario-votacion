@@ -10,10 +10,11 @@ __Las dependencias requeridas para este proyecto son:__
 
 - MariaDB: versión 10.4.28
 
-- XAMPP versión 8.2.4-0 <details>
+- XAMPP versión 8.2.4-0 
 
-
-    <summary>Guía de instalación:</summary>
+    <details>
+    
+    <summary><sub>Guía de instalación:</sub></summary>
  
 
     <sub>Luego de descargar en este link: (https://www.apachefriends.org/es/index.html)</sub>
@@ -44,7 +45,7 @@ __Las dependencias requeridas para este proyecto son:__
     <details>
 
 
-    <summary>Guía rápida:</summary>
+    <summary><sub>Guía rápida:</sub></summary>
 
 
     <sub>Abre una terminal o línea de comandos en tu sistema operativo y navega hasta el directorio donde deseas clonar el repositorio, ejecuta el siguiente comando: `git clone https://github.com/ndef10/formulario-votacion.git`</sub>
@@ -58,7 +59,7 @@ __Las dependencias requeridas para este proyecto son:__
     <details>
 
 
-    <summary>Guía rápida:</summary>
+    <summary><sub>Guía rápida:</sub></summary>
 
 
     <sub>Script se encuentra en la carpeta SQL dentro del proyecto (se llama: formulario.sql)</sub>
