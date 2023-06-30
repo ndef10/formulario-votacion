@@ -17,7 +17,7 @@ __Las dependencias requeridas para este proyecto son:__
     <details>
 
 
-    <summary>__Guía de instalación__:</summary>
+    <summary>Guía de instalación:</summary>
 
 
     Luego de descargar en este link: (https://www.apachefriends.org/es/index.html)
@@ -50,8 +50,7 @@ __Las dependencias requeridas para este proyecto son:__
     `sudo chown -R usuario:grupos /opt/lampp/htdocs`
     (para saber cuál es tu usuario se usa: `whoami` y para ver los grupos: `groups usuario`)
 
-    con `dolphin .` vamos a la interfáz gráfica
-
+        
     </details>
 
 
@@ -60,10 +59,10 @@ __Las dependencias requeridas para este proyecto son:__
     <details>
 
 
-    <summary>__Guía rápida:__</summary>
+    <summary>Guía rápida:</summary>
 
 
-    Abre una terminal o línea de comandos en tu sistema operativo y navega hasta el directorio donde deseas clonar el repositorio, ejecuta el siguiente comando: `git clone https://github.com/ndef10/formulario-votacion.git`
+    <sub>Abre una terminal o línea de comandos en tu sistema operativo y navega hasta el directorio donde deseas clonar el repositorio, ejecuta el siguiente comando: `git clone https://github.com/ndef10/formulario-votacion.git`</sub>
 
 
     </details>
@@ -77,13 +76,13 @@ __Las dependencias requeridas para este proyecto son:__
     <summary>Guía rápida:</summary>
 
 
-    Script se encuentra en la carpeta SQL dentro del proyecto *se llama: formulario.sql)
+    <small>Script se encuentra en la carpeta SQL dentro del proyecto (se llama: formulario.sql)
 
     Con el servidor iniciado abre una terminal, en caso de no tener configurada una contraseña puedes usar el siguiente comando: `mysql -u root -p`
     (si tienes una contraseña configurada para el usuario "root", se te solicitará ingresarla después de ejecutar el comando)
 
     Una vez que estés conectado a la base de datos, puedes importar el script con el siguiente comando: `source /ruta/al/formulario.sql`
-    (modificar la ruta dependiendo de su ubicación)
+    (modificar la ruta dependiendo de su ubicación)</small>
 
     </details>
 
