@@ -40,6 +40,8 @@ Este proyecto es producto de una prueba técnica para postular a un trabajo y mi
     Luego ir al navegador y poner la siguiente URL: (http://localhost/dashboard/phpMyAdmin)
 
    
+
+
     Configuracion global:
 
     Ingresar con: `sudo nano/etc/profile`
@@ -47,6 +49,8 @@ Este proyecto es producto de una prueba técnica para postular a un trabajo y mi
     no tocar nada y bajar al final donde pondremos lo siguiente: `export PATH=”$PATH:/opt/lampp/bin`
 
     volver al inicio y probar con este comando: `php —version`, si nos muestra la información es que ya esta configurado globalmente.
+
+
 
 
     Para ingresar por la terminal:
@@ -81,12 +85,12 @@ Este proyecto es producto de una prueba técnica para postular a un trabajo y mi
     <summary>Guía rápida:</summary>
 
 
-    Script se encuentra en la carpeta SQL dentro del proyecto
+    Script se encuentra en la carpeta SQL dentro del proyecto *se llama: formulario.sql)
 
-    con el servidor iniciado abre una terminal con el siguiente comando en caso de no tener configurada una contraseña: **mysql -u root -p**
+    Con el servidor iniciado abre una terminal, en caso de no tener configurada una contraseña puedes usar el siguiente comando: `mysql -u root -p`
     (si tienes una contraseña configurada para el usuario "root", se te solicitará ingresarla después de ejecutar el comando)
 
-    Una vez que estés conectado a la base de datos, puedes importar el script con el siguiente comando: **source /ruta/al/formulario.sql**
+    Una vez que estés conectado a la base de datos, puedes importar el script con el siguiente comando: `source /ruta/al/formulario.sql`
     (modificar la ruta dependiendo de su ubicación)
 
     </details>
