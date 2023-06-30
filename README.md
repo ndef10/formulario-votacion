@@ -10,14 +10,15 @@ Este proyecto es producto de una prueba técnica para postular a un trabajo y mi
 
 - MariaDB: versión 10.4.28
 
-- XAMPP version 8.2.4-0 
-(En caso de no tener instalado XAMPP se puede descargar aqui: 
+- XAMPP versión 8.2.4-0 
+
 
 
     <details>
 
 
     <summary>Guía de instalación:</summary>
+
 
     Luego de descargar en este link: (https://www.apachefriends.org/es/index.html)
     
@@ -56,55 +57,52 @@ Este proyecto es producto de una prueba técnica para postular a un trabajo y mi
     </details>
 
 
-- Clonar el repositorio del proyecto desde GitHub: git clone https://github.com/ndef10/formulario-votacion.git
+- Clonar el repositorio del proyecto 
 
-- Se crearon variables de entorno con la libreria: vlucas/phpdotenv
+    <details>
 
-- El archivo se llama formulario-votacion y se creo en \xampp\htdocs, y está disponible en la siguiente URL: **`http://localhost/formulario-votacion`** 
+
+    <summary>Guía rápida:</summary>
+
+
+    Abre una terminal o línea de comandos en tu sistema operativo y navega hasta el directorio donde deseas clonar el repositorio, ejecuta el siguiente comando: **git clone https://github.com/ndef10/formulario-votacion.git**
+
+
+    </details>
+
 
 -  Crear la base de datos y las tablas necesarias:
 
-- Script se encuentra en la carpeta SQL dentro del proyecto
-
-Aqui una guía para importar es script
-
-<details>
-<summary>Mostrar más</summary>
-
-Para importar un script SQL en una base de datos MariaDB, puedes seguir los siguientes pasos:
-
-Asegúrate de tener instalado el sistema de gestión de base de datos MariaDB y de haber iniciado el servidor.
-
-Abre una terminal o línea de comandos y accede al directorio donde se encuentra el archivo SQL que deseas importar.
-
-Utiliza el comando mysql seguido de los parámetros necesarios para conectarte a la base de datos. Por ejemplo, si estás trabajando en localhost con el usuario "root" y sin contraseña, el comando sería:
+    <details>
 
 
-mysql -u root -p
-Si tienes una contraseña configurada para el usuario "root", se te solicitará ingresarla después de ejecutar el comando.
-
-Una vez que estés conectado a la base de datos, puedes importar el script SQL utilizando el comando source seguido de la ruta completa del archivo SQL. Por ejemplo:
+    <summary>Guía rápida:</summary>
 
 
-source /ruta/al/archivo.sql
-Asegúrate de reemplazar /ruta/al/archivo.sql con la ruta correcta hacia tu archivo SQL.
+    Script se encuentra en la carpeta SQL dentro del proyecto
 
-El comando source ejecutará el script SQL y comenzará a importar las instrucciones y datos en la base de datos. Dependiendo del tamaño del archivo y la cantidad de instrucciones, esto puede llevar algún tiempo.
+    con el servidor iniciado abre una terminal con el siguiente comando en caso de no tener configurada una contraseña: **mysql -u root -p**
+    (si tienes una contraseña configurada para el usuario "root", se te solicitará ingresarla después de ejecutar el comando)
 
-Una vez que el proceso de importación haya finalizado, recibirás un mensaje indicando que se ha importado correctamente.
+    Una vez que estés conectado a la base de datos, puedes importar el script con el siguiente comando: **source /ruta/al/formulario.sql**
+    (modificar la ruta dependiendo de su ubicación)
 
-Es importante tener en cuenta que al importar un script SQL, este puede contener instrucciones para crear tablas, insertar datos, definir relaciones y realizar otras operaciones relacionadas con la base de datos. Asegúrate de que el script SQL sea compatible con la versión de MariaDB que estás utilizando y que estés importando en la base de datos correcta.
-
-Recuerda que es recomendable realizar una copia de seguridad de tu base de datos antes de realizar cualquier importación o modificación importante.
-
-</details>
+    </details>
 
 
 
-### Documentacion sobre como iniciar el servido XAMPP y configurar la base de datos MariaDB:
+- Configurar variables de entorno
 
--Estas son mis notas personales para la instalacionen el sistema operativo Linux con la Distribucion Fedora 36:
+    <details>
 
+
+    <summary>Guía rápida:</summary>
+
+
+    Se crearon variables de entorno con la libreria: vlucas/phpdotenv
+
+
+    </details>
 
 
 
