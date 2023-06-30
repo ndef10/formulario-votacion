@@ -12,21 +12,20 @@ Este proyecto es producto de una prueba técnica para postular a un trabajo y mi
 
 - XAMPP version 8.2.4-0 
 (En caso de no tener instalado XAMPP se puede descargar aqui: (https://www.apachefriends.org/es/index.html))
-Guía de instalación:
+
 
 <details>
-<summary>Mostrar más</summary>
 
-Luego de descargar ir a la terminal/Download 
-y ponemos el siguiente comando: **sudo chmod +x ./xampp-linux-x64-8.2.4-0-installer.run** 
+
+<summary>Guía de instalación:</summary>
+
+Luego de descargar ir a la terminal/Download
+
+ponemos el siguiente comando: **sudo chmod +x ./xampp-linux-x64-8.2.4-0-installer.run** 
 
 luego ejecutamos sudo **./xampp-linux-x64-8.2.4-0-installer.run**
 
-y se abrirá una ventana donde solo debemos dar siguiente hasta terminar y cerrar
-
-los archivos descargados se guardan en: **cd /opt/lampp**
-
-y al listar con **ls** podemos acceder a la carpeta **htdocs**, aquí es donde se crearán los proyectos en PHP,
+y se abrirá una ventana donde solo debemos dar siguiente hasta terminar y cerrar.
 
 para ejecutar la interfaz grafica se debe usar el sgte. comando: **sudo ./manager-linux-x64.run**
 
@@ -36,6 +35,7 @@ en la interfaz grafica, ir a **Manage Servers/start all** y activar los tres cam
 Para probar que XAMPP funciona, ir al navegador y poner la siguiente URL: http://localhost/dashboard/
 
 ingresando a **phpMyAdmin** encontramos nuestro lugar de trabajo 
+
 
 Configuracion global:
 
