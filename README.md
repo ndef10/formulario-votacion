@@ -1,10 +1,10 @@
-# **Formulario de votación**
+# Formulario de votación
 
 Este proyecto es producto de una prueba técnica para postular a un trabajo y mi primer acercamiento a PHP. 
 
-## **Requisitos previos**
+## Requisitos previos
 
-__Las dependencias requeridas para este proyecto son:__
+__Antes de ejecutar el proyecto, es necesario tener instaladas las siguientes dependencias:__
 
 - PHP: versión 8.1.18 
 
@@ -12,28 +12,82 @@ __Las dependencias requeridas para este proyecto son:__
 
 - XAMPP versión 8.2.4-0 
 
-## # Instalación
+## Instalación
 
-- Abre una terminal o línea de comandos en tu sistema operativo y navega hasta el directorio donde deseas clonar el repositorio, ejecuta el siguiente comando: `git clone https://github.com/ndef10/formulario-votacion.git`
-Luego instala las dependencias requeridas para su funcionamiento ejecutando: `composer install`
+- __Abre una terminal o línea de comandos en tu sistema operativo y navega hasta el directorio donde deseas clonar el repositorio, ejecuta el siguiente comando:__
+<div style="background-color: black; padding: 10px; border-radius: 10px;">
+  <pre>
+    <code>
+      git clone https://github.com/ndef10/formulario-votacion.git
+    </code>
+  </pre>
+</div>
+Luego instala las dependencias requeridas para su funcionamiento ejecutando:
+<div style="background-color: black; padding: 10px; border-radius: 10px;">
+  <pre>
+    <code>
+      composer install
+    </code>
+  </pre>
+</div>
+Ingresa al proyecto
+<div style="background-color: black; padding: 10px; border-radius: 10px;">
+  <pre>
+    <code>
+      cd formulario-votacion
+    </code>
+  </pre>
+</div>
+Abrelo en VSC
+<div style="background-color: black; padding: 10px; border-radius: 10px;">
+  <pre>
+    <code>
+      code .
+    </code>
+  </pre>
+</div>
 
--  Crear la base de datos y las tablas necesarias
-Con el servidor iniciado abre una terminal, en caso de no tener configurada una contraseña puedess usar el siguiente comando: `mysql -u root -p` (si tienes una contraseña configurada para el usuario "root", se te solicitará ingresarla después de ejecutar el comando)
-Una vez que estés conectado a la base de datos, puedes importar el script con el siguiente comando: `source /ruta/al/formulario.sql`
-    (modificar la ruta dependiendo de su ubicación)
+- __Crea un archivo .env con las variables de entorno en la raíz del proyecto__
+
+   <div style="background-color: black; padding: 10px; border-radius: 10px;">
+  	<pre>
+    	<code>
+    	
+	DB_SERVIDOR=localhost
+	DB_CONTRASENIA=
+	DB_CONTRASENIA=root
+	DB_BASEDEDATOS=formulario	
+    	</code>
+  	</pre>
+   </div>
+
+- __Crea la base de datos y las tablas necesarias__
+Abre XAMPP en tu sistema:
+- Si estás en Linux: 
+<div style="background-color: black; padding: 10px; border-radius: 10px;">
+  <pre>
+    <code>
+      sudo /opt/lampp/manager-linux-x64.run
+    </code>
+  </pre>
+</div>
 
 
-- Configurar variables de entorno
-Debes crear un archivo .env en la raíz del proyecto con esta estructura:    
+- Si estas en windows:
+<div style="background-color: black; padding: 10px; border-radius: 10px;">
+  <pre>
+    <code>
+      C:\xampp\xampp-control.exe
+    </code>
+  </pre>
+</div>
 
-    - DB_SERVIDOR=localhost
-    - DB_USUARIO=(tu usuario)
-    - DB_CONTRASENIA=(tu contraseña)
-    - DB_BASEDEDATOS=formulario
+En la interfaz gráfica selecciona la pestaña que dice `Menage Servers` e inicia Apache MySQL y FTP con `Start All`
 
+En tu navegador accede a la interfaz de phpMyAdmin (http://localhost/phpmyadmin)
+Ve a importar selecciona el archivo desde tu sistema `aceptar` / `ejecutar` y recibirás una notificación de éxito.
 
-
-## # Tecnologías utilizadas
+## Tecnologías utilizadas
 
 - JavaScript
 - PHP versión 8.1.18
@@ -44,16 +98,15 @@ Debes crear un archivo .env en la raíz del proyecto con esta estructura:
 - Git
 - vlucas/phpdotenv ^5.5
 
-## # Diseño
+## Diseño
 
-El diseño de la interfaz se realizó apegandose al modelo otorgado por el futuro empleador y un poquito de contraste
+El diseño de la interfaz se realizó de acuerdo al modelo otorgado por el futuro empleador y un poquito de contraste
 
-
-## # Despliegue
+## Despliegue
 
 El proyecto solo se encuentra en local, con base de datos en MariaDB
 
 
-## # Autor
+## Autor
 
 Nilda Marcela Defranchi Morales
