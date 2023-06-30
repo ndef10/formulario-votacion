@@ -20,39 +20,41 @@ Este proyecto es producto de una prueba técnica para postular a un trabajo y mi
     <summary>Guía de instalación:</summary>
 
 
+
+
+
+
     Luego de descargar en este link: (https://www.apachefriends.org/es/index.html)
     
-    Ir a la terminal/Download y ponemos el siguiente comando: **sudo chmod +x ./xampp-linux-x64-8.2.4-0-installer.run** 
+    Abrir la terminalen descargas y ponemos el siguiente comando: `sudo chmod +x ./xampp-linux-x64-8.2.4-0-installer.run` 
 
-    luego ejecutamos sudo **./xampp-linux-x64-8.2.4-0-installer.run**
+    luego ejecutamos sudo `./xampp-linux-x64-8.2.4-0-installer.run`
 
     y se abrirá una ventana donde solo debemos dar siguiente hasta terminar y cerrar.
 
 
-    para ejecutar la interfaz grafica se debe usar el sgte. comando: **sudo ./manager-linux-x64.run**
+    para ejecutar la interfaz grafica se debe usar el sgte. comando: `sudo ./manager-linux-x64.run`
 
-    en la interfaz grafica, ir a **Manage Servers/start all** y activar los tres campos (si la última no se activa, es que falta instalar lib, para eso, usa el siguiente comando:**sudo dnf install libnsl** y listo.
+    en la interfaz grafica, ir a 'Manage Servers/start all' y activar los tres campos (si la última no se activa, es que falta instalar lib, para eso, usa el siguiente comando: `sudo dnf install libnsl` y listo.
 
-    Para probar que XAMPP funciona, ir al navegador y poner la siguiente URL: http://localhost/dashboard/
+    Luego ir al navegador y poner la siguiente URL: (http://localhost/dashboard/phpMyAdmin)
 
-    ingresando a **phpMyAdmin** encontramos nuestro lugar de trabajo 
-
-
+   
     Configuracion global:
 
-    Ingresar con: **sudo nano/etc/profile**
+    Ingresar con: `sudo nano/etc/profile`
 
-    no tocar nada y bajar al final donde pondremos lo siguiente: **export PATH=”$PATH:/opt/lampp/bin”**
+    no tocar nada y bajar al final donde pondremos lo siguiente: `export PATH=”$PATH:/opt/lampp/bin`
 
-    volver al inicio y probar con este comando: **php —version**, si nos muestra la información es que ya esta configurado globalmente.
+    volver al inicio y probar con este comando: `php —version`, si nos muestra la información es que ya esta configurado globalmente.
 
 
     Para ingresar por la terminal:
 
-    - **sudo chown -R usuario:grupos /opt/lampp/htdocs**
-    (para saber cuál es tu usuario se usa: **whoami** y para ver los grupos: **groups usuario**)
+    `sudo chown -R usuario:grupos /opt/lampp/htdocs`
+    (para saber cuál es tu usuario se usa: `whoami` y para ver los grupos: `groups usuario`)
 
-    con **dolphin .** vamos a la interfáz gráfica
+    con `dolphin .` vamos a la interfáz gráfica
 
     </details>
 
@@ -65,7 +67,7 @@ Este proyecto es producto de una prueba técnica para postular a un trabajo y mi
     <summary>Guía rápida:</summary>
 
 
-    Abre una terminal o línea de comandos en tu sistema operativo y navega hasta el directorio donde deseas clonar el repositorio, ejecuta el siguiente comando: **git clone https://github.com/ndef10/formulario-votacion.git**
+    Abre una terminal o línea de comandos en tu sistema operativo y navega hasta el directorio donde deseas clonar el repositorio, ejecuta el siguiente comando: `git clone https://github.com/ndef10/formulario-votacion.git`
 
 
     </details>
