@@ -12,7 +12,7 @@ __Las dependencias requeridas para este proyecto son:__
 
 - XAMPP versión 8.2.4-0 
 
-## # Instalació
+## # Instalación
 
 - Abre una terminal o línea de comandos en tu sistema operativo y navega hasta el directorio donde deseas clonar el repositorio, ejecuta el siguiente comando: `git clone https://github.com/ndef10/formulario-votacion.git`
 Luego instala las dependencias requeridas para su funcionamiento ejecutando: `composer install`
