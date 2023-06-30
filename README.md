@@ -20,7 +20,7 @@ __Las dependencias requeridas para este proyecto son:__
     <summary>Guía de instalación:</summary>
 
 
-    Luego de descargar en este link: (https://www.apachefriends.org/es/index.html)
+    <sub>Luego de descargar en este link: (https://www.apachefriends.org/es/index.html)
     
     Abrir la terminal en descargas y ponemos el siguiente comando: `sudo chmod +x ./xampp-linux-x64-8.2.4-0-installer.run` 
 
@@ -48,7 +48,7 @@ __Las dependencias requeridas para este proyecto son:__
     __Para ingresar por la terminal:__
 
     `sudo chown -R usuario:grupos /opt/lampp/htdocs`
-    (para saber cuál es tu usuario se usa: `whoami` y para ver los grupos: `groups usuario`)
+    (para saber cuál es tu usuario se usa: `whoami` y para ver los grupos: `groups usuario`)</sub>
 
         
     </details>
@@ -76,13 +76,13 @@ __Las dependencias requeridas para este proyecto son:__
     <summary>Guía rápida:</summary>
 
 
-    <small>Script se encuentra en la carpeta SQL dentro del proyecto (se llama: formulario.sql)
+    <sub>Script se encuentra en la carpeta SQL dentro del proyecto (se llama: formulario.sql)
 
     Con el servidor iniciado abre una terminal, en caso de no tener configurada una contraseña puedes usar el siguiente comando: `mysql -u root -p`
     (si tienes una contraseña configurada para el usuario "root", se te solicitará ingresarla después de ejecutar el comando)
 
     Una vez que estés conectado a la base de datos, puedes importar el script con el siguiente comando: `source /ruta/al/formulario.sql`
-    (modificar la ruta dependiendo de su ubicación)</small>
+    (modificar la ruta dependiendo de su ubicación)</sub>
 
     </details>
 
