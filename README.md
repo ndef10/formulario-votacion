@@ -25,10 +25,10 @@ Una vez que estés conectado a la base de datos, puedes importar el script con e
 
 - Configurar variables de entorno
 Debes crear un archivo .env en la raíz del proyecto con esta estructura:
-DB_SERVIDOR=localhost
-DB_USUARIO=(tu usuario)
-DB_CONTRASENIA=(tu contraseña)
-DB_BASEDEDATOS=formulario
+    -DB_SERVIDOR=localhost
+    -DB_USUARIO=(tu usuario)
+    -DB_CONTRASENIA=(tu contraseña)
+    -DB_BASEDEDATOS=formulario
 
 
 
