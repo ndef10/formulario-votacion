@@ -33,7 +33,7 @@ Debes crear un archivo .env en la raíz del proyecto con esta estructura:
 
 
 
-### **Tecnologías utilizadas**
+## # Tecnologías utilizadas
 
 - JavaScript
 - PHP versión 8.1.18
@@ -44,16 +44,16 @@ Debes crear un archivo .env en la raíz del proyecto con esta estructura:
 - Git
 - vlucas/phpdotenv ^5.5
 
-### **Diseño**
+## # Diseño
 
 El diseño de la interfaz se realizó apegandose al modelo otorgado por el futuro empleador y un poquito de contraste
 
 
-### **Despliegue**
+## # Despliegue
 
 El proyecto solo se encuentra en local, con base de datos en MariaDB
 
 
-### **Autor**
+## # Autor
 
 Nilda Marcela Defranchi Morales
