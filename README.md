@@ -11,49 +11,49 @@ Este proyecto es producto de una prueba técnica para postular a un trabajo y mi
 - MariaDB: versión 10.4.28
 
 - XAMPP version 8.2.4-0 
-(En caso de no tener instalado XAMPP se puede descargar aqui: (https://www.apachefriends.org/es/index.html))
+(En caso de no tener instalado XAMPP se puede descargar aqui: 
 
 
-<details>
+    <details>
 
 
-<summary>Guía de instalación:</summary>
+    <summary>Guía de instalación:</summary>
 
-Luego de descargar ir a la terminal/Download
+    Luego de descargar en este link: (https://www.apachefriends.org/es/index.html)
+    
+    Ir a la terminal/Download y ponemos el siguiente comando: **sudo chmod +x ./xampp-linux-x64-8.2.4-0-installer.run** 
 
-ponemos el siguiente comando: **sudo chmod +x ./xampp-linux-x64-8.2.4-0-installer.run** 
+    luego ejecutamos sudo **./xampp-linux-x64-8.2.4-0-installer.run**
 
-luego ejecutamos sudo **./xampp-linux-x64-8.2.4-0-installer.run**
-
-y se abrirá una ventana donde solo debemos dar siguiente hasta terminar y cerrar.
-
-para ejecutar la interfaz grafica se debe usar el sgte. comando: **sudo ./manager-linux-x64.run**
-
-en la interfaz grafica, ir a **Manage Servers/start all** y activar los tres campos
-(si la última no se activa, es que falta instalar lib, para eso, usa el siguiente comando:**sudo dnf install libnsl** y listo.
-
-Para probar que XAMPP funciona, ir al navegador y poner la siguiente URL: http://localhost/dashboard/
-
-ingresando a **phpMyAdmin** encontramos nuestro lugar de trabajo 
+    y se abrirá una ventana donde solo debemos dar siguiente hasta terminar y cerrar.
 
 
-Configuracion global:
+    para ejecutar la interfaz grafica se debe usar el sgte. comando: **sudo ./manager-linux-x64.run**
 
-Ingresar con: **sudo nano /etc/profile**
+    en la interfaz grafica, ir a **Manage Servers/start all** y activar los tres campos (si la última no se activa, es que falta instalar lib, para eso, usa el siguiente comando:**sudo dnf install libnsl** y listo.
 
-no tocar nada y bajar al final donde pondremos lo siguiente: **export PATH=”$PATH:/opt/lampp/bin”**
+    Para probar que XAMPP funciona, ir al navegador y poner la siguiente URL: http://localhost/dashboard/
 
-volver al inicio y probar con este comando: **php —version**, si nos muestra la información es que ya esta configurado globalmente.
+    ingresando a **phpMyAdmin** encontramos nuestro lugar de trabajo 
 
 
-Para ingresar por la terminal:
+    Configuracion global:
 
-- **sudo chown -R usuario:grupos /opt/lampp/htdocs**
-(para saber cuál es tu usuario se usa: **whoami** y para ver los grupos: **groups usuario**)
+    Ingresar con: **sudo nano/etc/profile**
 
-con **dolphin .** ingresamos a la interfáz gráfica
+    no tocar nada y bajar al final donde pondremos lo siguiente: **export PATH=”$PATH:/opt/lampp/bin”**
 
-</details>
+    volver al inicio y probar con este comando: **php —version**, si nos muestra la información es que ya esta configurado globalmente.
+
+
+    Para ingresar por la terminal:
+
+    - **sudo chown -R usuario:grupos /opt/lampp/htdocs**
+    (para saber cuál es tu usuario se usa: **whoami** y para ver los grupos: **groups usuario**)
+
+    con **dolphin .** vamos a la interfáz gráfica
+
+    </details>
 
 
 - Clonar el repositorio del proyecto desde GitHub: git clone https://github.com/ndef10/formulario-votacion.git
