@@ -1,6 +1,6 @@
-# **Formulario de votacion**
+# **Formulario de votación**
 
-Este proyecto es producto de una prueba técnica para postular a un trabajo en TI y mi primer acercamiento a PHP. 
+Este proyecto es producto de una prueba técnica para postular a un trabajo y mi primer acercamiento a PHP. 
 
 ## **Requisitos previos**
 
@@ -10,7 +10,51 @@ Este proyecto es producto de una prueba técnica para postular a un trabajo en T
 
 - MariaDB: versión 10.4.28
 
-- XAMPP version 8.2.4-0 (En caso de no tener instalado XAMPP se puede descargar aqui: (https://www.apachefriends.org/es/index.html))
+- XAMPP version 8.2.4-0 
+(En caso de no tener instalado XAMPP se puede descargar aqui: (https://www.apachefriends.org/es/index.html))
+Guía de instalación:
+
+<details>
+<summary>Mostrar más</summary>
+
+Luego de descargar ir a la terminal/Download 
+y ponemos el siguiente comando: **sudo chmod +x ./xampp-linux-x64-8.2.4-0-installer.run** 
+
+luego ejecutamos sudo **./xampp-linux-x64-8.2.4-0-installer.run**
+
+y se abrirá una ventana donde solo debemos dar siguiente hasta terminar y cerrar
+
+los archivos descargados se guardan en: **cd /opt/lampp**
+
+y al listar con **ls** podemos acceder a la carpeta **htdocs**, aquí es donde se crearán los proyectos en PHP,
+
+para ejecutar la interfaz grafica se debe usar el sgte. comando: **sudo ./manager-linux-x64.run**
+
+en la interfaz grafica, ir a **Manage Servers/start all** y activar los tres campos
+(si la última no se activa, es que falta instalar lib, para eso, usa el siguiente comando:**sudo dnf install libnsl** y listo.
+
+Para probar que XAMPP funciona, ir al navegador y poner la siguiente URL: http://localhost/dashboard/
+
+ingresando a **phpMyAdmin** encontramos nuestro lugar de trabajo 
+
+Configuracion global:
+
+Ingresar con: **sudo nano /etc/profile**
+
+no tocar nada y bajar al final donde pondremos lo siguiente: **export PATH=”$PATH:/opt/lampp/bin”**
+
+volver al inicio y probar con este comando: **php —version**, si nos muestra la información es que ya esta configurado globalmente.
+
+
+Para ingresar por la terminal:
+
+- **sudo chown -R usuario:grupos /opt/lampp/htdocs**
+(para saber cuál es tu usuario se usa: **whoami** y para ver los grupos: **groups usuario**)
+
+con **dolphin .** ingresamos a la interfáz gráfica
+
+</details>
+
 
 - Clonar el repositorio del proyecto desde GitHub: git clone https://github.com/ndef10/formulario-votacion.git
 
@@ -22,7 +66,7 @@ Este proyecto es producto de una prueba técnica para postular a un trabajo en T
 
 - Script se encuentra en la carpeta SQL dentro del proyecto
 
-### Aqui una guía para importar es script
+Aqui una guía para importar es script
 
 <details>
 <summary>Mostrar más</summary>
@@ -61,62 +105,6 @@ Recuerda que es recomendable realizar una copia de seguridad de tu base de datos
 
 -Estas son mis notas personales para la instalacionen el sistema operativo Linux con la Distribucion Fedora 36:
 
-### Para descargar xampp
-
-<details>
-<summary>Mostrar más</summary>
-
-[Download XAMPP](https://www.apachefriends.org/download.html)
-
-En terminal ir a Download con este comando: **cd Download**
-
-listamos, para ver lo descargado con **ls**
-
-ponemos el siguiente comando: **sudo chmod +x ./xampp-linux-x64-8.2.4-0-installer.run**
-
-pedira clave root (el pc)
-
-luego ejecutamos sudo **./xampp-linux-x64-8.2.4-0-installer.run**
-
-y se abrira una ventana donde solo debemos dar siguiente hasta terminar y cerrar
-
-los archivos descargados se guardan en: **cd /opt/lampp**
-
-y al listar con **ls** podemos acceder a la carpeta **htdocs** aqui es donde se crearan los proyectos en php
-
-para ejecutar la interfaz grafica se debe usar el sgte. comando: **sudo ./manager-linux-x64.run**
-
-en la interfaz grafica, pichar en **Manage Servers, start all** y se tiene que poner **verde** las tres pelotitas, si la ultima no se pone roja, es que falta instalar lib y se hace con este comando: 
-
-**sudo dnf install libnsl** 
-
-para probar que xampp funciona, ir al navegador y poner la siguiente URL: http://localhost/dashboard/
-
-en le link que dice **phpMyAdmin** es donde se trabaja normalmente y debe estar ok 
-
-para poder crear carpetas aca hay que hacer la siguiente configuracion:
-
-- **sudo chown -R Marce:Marce /opt/lampp/htdocs**
-- para saber cual es nuestro usuario se usa; **whoami** 
-- y para ver los grupos: **groups Marce**
-- para crear un archivo: **touch hola.html**
-- para editar el archivo: **nano hola.html** y adentro se puede escribir y grabar normalmente
-- para ver lo editado en el navegador , voy a [localhost/hola.html](http://localhost/hola.html)
-- con **dolphin .** voy a la interfaz grafica para crear archivos
-
-En pampp, si voy a bin con cd bin puedo ver toda la lineas de comando y desde aca al poner el comando: **./php —version** obtengo la version que tengo instalada de php, para poder verla desde el inicio: 
-
-- **sudo nano /etc/profile**
-
-no tocar nada y bajar al final donde pondremos lo siguiente:
-
-- **export PATH=”$PATH:/opt/lampp/bin”**
-
-luego al ir al inicio de la terminal poner: source /etc/profile
-
-y abajo poner: php —version podemos ver la version de php desde aca y termina la configuracion quedando en forma global
-s
-</details>
 
 
 
