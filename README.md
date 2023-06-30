@@ -10,15 +10,11 @@ __Las dependencias requeridas para este proyecto son:__
 
 - MariaDB: versión 10.4.28
 
-- XAMPP versión 8.2.4-0 
-
-
-
-    <details>
+- XAMPP versión 8.2.4-0 <details>
 
 
     <summary>Guía de instalación:</summary>
-
+ 
 
     <sub>Luego de descargar en este link: (https://www.apachefriends.org/es/index.html)</sub>
     
