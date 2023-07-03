@@ -1,6 +1,7 @@
 # Formulario de votación
 
-Este proyecto es producto de una prueba técnica para postular a un trabajo y mi primer acercamiento a PHP. 
+Interfáz que valida, permite emitir un voto y guardar la información ingresada en una base de datos.
+(Este proyecto es producto de una prueba técnica para postular a un trabajo y mi primer acercamiento a PHP) 
 
 ## Requisitos previos
 
