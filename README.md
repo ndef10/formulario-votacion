@@ -62,6 +62,7 @@ Abrelo en VSC
    </div>
 
 - __Crea la base de datos y las tablas necesarias__
+
 Abre XAMPP en tu sistema:
 - Si estás en Linux: 
 <div style="background-color: black; padding: 10px; border-radius: 10px;">
