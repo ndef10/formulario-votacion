@@ -1,7 +1,8 @@
 # Formulario de votación
 
 Interfáz que valida, permite emitir un voto y guardar la información ingresada en una base de datos.
-(Este proyecto es producto de una prueba técnica para postular a un trabajo y mi primer acercamiento a PHP) 
+
+(Este proyecto es producto de una prueba técnica para postular a un trabajo y mi primer acercamiento a PHP)
 
 ## Requisitos previos
 
@@ -99,6 +100,10 @@ Ve a importar selecciona el archivo desde tu sistema `aceptar` / `ejecutar` y re
 - Jquery 3.6.0 
 - Git
 - vlucas/phpdotenv ^5.5
+
+## Documentación
+
+La documentacion se encuentra en el siguiente link: (https://app.swaggerhub.com/apis-docs/MARCELADEFRAMCHI/formulario-votacion/1.0.0#/default/post_)
 
 ## Diseño
 
