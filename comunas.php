@@ -12,7 +12,7 @@ if (!$conexion) {
     echo "Error de conexión";
 }
 
-$region_id = $_POST['c'];
+$region_id = $_POST['r'];
 
 $consulta = "SELECT * FROM comunas WHERE id = $region_id"; 
 $ejecutar_consulta = mysqli_query($conexion, $consulta);

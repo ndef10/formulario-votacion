@@ -64,7 +64,7 @@ if (isset($_POST['encuesta']) && is_array($_POST['encuesta'])) {
                          VALUES ('$nombre_formateado', '$alias', '$rut', '$email', '$nombre_region', '$nombre_comuna', '$nom_candidato', '$respuesta_texto')";
 
             if (mysqli_query($conexion, $insertar)) {
-                echo "<h1>Datos insertados correctamente</h1>";
+                echo "<h1>Datos insertados correctamente</h1>";          
             } else {
                 echo "<h1>Error al insertar datos</h1>" ;
             }

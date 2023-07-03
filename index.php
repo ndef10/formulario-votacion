@@ -20,33 +20,19 @@
   <!-- script solicitud ajax -->
   <script type="text/javascript">
     function buscar() {
-      const str = document.getElementById("region").value;
+      const region = $("#region").val();
       
-      if (str === "") {
-        document.getElementById("txtHint").innerHTML = "";
+      if (region === "") {
+        $("txtHint").html("");
         return;
-      }
-
-      const formData = {
-        nombre: "nombre",
-        alias: "alias",
-        rut: "rut",
-        email: "email",
-        comuna: "comuna",
-        candidato: "candidato",
-        encuesta: "encuesta"    
-      }; 
+      }      
 
       $.ajax({
         url: 'comunas.php',
         type: 'POST',
-        data: { c: str, ...formData },
-        beforeSend: function() {
-          $('#mostrar_mensaje').html('Mensaje antes de enviar');
-        },
+        data: { r: region },        
         success: function(response) {
-          $('#div').html(response);        
-          document.getElementsById("formulario").reset();
+          $('#div').html(response);       
         },
         error: function(xhr, status, error) {
           console.log(error);
@@ -57,31 +43,15 @@
     function votar() {    
       $.ajax({
         url: 'candidatos.php',
-        type: 'GET',
-        data: { n: nom_candidato},
-        beforeSend: function() {
-          $('#mostrar_mensaje').html('Mensaje antes de enviar');
-        },
-        success: function(response) {
-          document.getElementsById("formulario").reset();        
+        type: 'GET',       
+        success: function(response) {                 
         },
         error: function(xhr, status, error) {
           console.log(error);
         }
       });
-    };
-    
-    document.getElementById('formulario').addEventListener('submit', function(event) {
-      let region = document.getElementById('region');
-      let comuna = document.getElementById('comuna');
-      let candidato = document.getElementById('candidato');
-
-      if (!region.value || !comuna.value || !candidato.value) {
-        event.preventDefault(); 
-        alert('Por favor, complete todos los campos requeridos correctamente');
-      }
-    });
-  
+    }; 
+     
   </script>
   
 </head>
@@ -90,7 +60,7 @@
     <main class="container">
 
       <h1 class="my-5">Formulario de votación</h1>      
-      <form id="FormularioAjax" action="votacion.php" method="POST">       
+      <form id="formulario" action="votacion.php" method="POST">       
     
       <div class="mb-3 form-row align-items-center">
         <label for="nombre" class="col-auto col-form-label text-truncate pb-4 px-5">Nombre y apellido</label>
