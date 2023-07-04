@@ -48,6 +48,7 @@ Abrelo en VSC
     </code>
   </pre>
 </div>
+El servidor estará disponible en (http://localhost/formulario-votacion/)
 
 - __Crea un archivo .env con las variables de entorno en la raíz del proyecto__
 
@@ -74,8 +75,6 @@ Abre XAMPP en tu sistema:
     </code>
   </pre>
 </div>
-
-
 - Si estas en windows:
 <div style="background-color: black; padding: 10px; border-radius: 10px;">
   <pre>
@@ -86,6 +85,15 @@ Abre XAMPP en tu sistema:
 </div>
 
 En la interfaz gráfica selecciona la pestaña que dice `Menage Servers` e inicia Apache MySQL y FTP con `Start All`
+(En linux, si apache no cerró bien la última vez que lo usaste dará problemas, para solucionarlo, ejecuta este comando y vuelve a a iniciar)
+<div style="background-color: black; padding: 10px; border-radius: 10px;">
+  <pre>
+    <code>
+      sudo killall httpd
+    </code>
+  </pre>
+</div>
+
 
 En tu navegador accede a la interfaz de phpMyAdmin (http://localhost/phpmyadmin)
 Ve a importar selecciona el archivo desde tu sistema `aceptar` / `ejecutar` y recibirás una notificación de éxito.
