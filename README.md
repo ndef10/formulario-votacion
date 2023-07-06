@@ -86,7 +86,7 @@ Abre XAMPP en tu sistema:
 
 En la interfaz gráfica selecciona la pestaña que dice `Menage Servers` e inicia Apache MySQL y FTP con `Start All`
 
-(En linux, si apache no cerró bien la última vez que lo usaste dará problemas, para solucionarlo, ejecuta este comando y vuelve a a iniciar)
+(En linux, si apache no cerró bien la última vez que lo usaste dará problemas, para solucionarlo, ejecuta este comando y vuelve a iniciar)
 <div style="background-color: black; padding: 10px; border-radius: 10px;">
   <pre>
     <code>
@@ -112,7 +112,7 @@ Ve a importar selecciona el archivo desde tu sistema `aceptar` / `ejecutar` y re
 
 ## Documentación
 
-La documentacion se encuentra en el siguiente link: (https://app.swaggerhub.com/apis-docs/MARCELADEFRAMCHI/formulario-votacion/1.0.0#/default/post_)
+La documentacion se encuentra en el siguiente link: (https://app.swaggerhub.com/apis/MARCELADEFRAMCHI/formulario-votacion/1.0.0#/formulario/post_)
 
 ## Diseño
 
