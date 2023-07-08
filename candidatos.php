@@ -13,10 +13,10 @@ if(!$conexion) {
 }
 
 $consulta = "SELECT * FROM candidatos"; 
-$ejecutar_consulta = mysqli_query($conexion, $consulta);
+$respuesta = mysqli_query($conexion, $consulta);
 
 $options = "";
-while($fila = mysqli_fetch_array($ejecutar_consulta)) {
+while($fila = mysqli_fetch_array($respuesta)) {
     $options .= "<option value='" . $fila['id'] . "'>" . $fila['candidatos'] . "</option>";
 
 }

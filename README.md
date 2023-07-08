@@ -112,7 +112,7 @@ Ve a importar selecciona el archivo desde tu sistema `aceptar` / `ejecutar` y re
 
 ## Documentación
 
-La documentacion se encuentra en el siguiente link: (https://app.swaggerhub.com/apis/MARCELADEFRAMCHI/formulario-votacion/1.0.0#/formulario/post_)
+La documentacion se encuentra en el siguiente link: (https://app.swaggerhub.com/apis-docs/MARCELADEFRAMCHI/formulario-votacion/1.0.0)
 
 ## Diseño
 

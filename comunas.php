@@ -15,12 +15,12 @@ if (!$conexion) {
 $region_id = $_POST['r'];
 
 $consulta = "SELECT * FROM comunas WHERE id = $region_id"; 
-$ejecutar_consulta = mysqli_query($conexion, $consulta);
+$respuesta = mysqli_query($conexion, $consulta);
 
 $options = '<option value="">Seleccione su comuna</option>'; 
 
-while($fila = mysqli_fetch_array($ejecutar_consulta)){
-    $options .= "<option value='" . $fila['id'] . "'>" . $fila['nom_comuna'] . "</option>";
+while ($fila = mysqli_fetch_array($respuesta)) {
+    $options .= "<option value='" . $fila['id'] . "' name='" . $fila['nom_comuna'] . "'>" . $fila['nom_comuna'] . "</option>";
 }
 
 echo '<select id="comuna" name="comuna" class="form-select form-select-sm custom-height" aria-label=".form-select-sm example">' . $options . '</select>';
