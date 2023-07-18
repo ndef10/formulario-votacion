@@ -23,75 +23,70 @@
     <main class="container">
 
       <h1 class="my-5">Formulario de votación</h1>      
-      <form id="formulario" action="" method="POST">               
-      
+      <form id="datos_formulario" action="" method="POST"> 
+        <div id="mensaje" class="mb-3"></div>
+              
         <div class="mb-3 form-row align-items-center">
           <label for="nombre" class="col-auto col-form-label text-truncate pb-4 px-5">Nombre y apellido</label>
           <div class="col">
-            <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Ej: María Pino" aria-describedby="helpId" pattern="[A-Za-z]+\s[A-Za-z]+" Required>
-            <small id="helpId" class="text-muted">Ingresa tu nombre y apellido</small>
+            <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Ej: María Pino" aria-describedby="helpId" pattern="[A-Za-z]+\s[A-Za-z]+">            
           </div>
         </div>
 
         <div class="mb-3 form-row align-items-center">
           <label for="alias" class="col-auto col-form-label text-truncate pb-4 px-5">Alias</label>
           <div class="col">
-            <input type="text" name="alias" id="alias" class="form-control" placeholder="Ej: Maria23" aria-describedby="helpId" pattern="(?=.*[a-zA-Z])(?=.*\d)[a-zA-Z0-9]{5,}" Required>
-            <small id="helpId" class="text-muted">Debe contener letras, números y más de 5 caracteres</small>
+            <input type="text" name="alias" id="alias" class="form-control" placeholder="Ej: Maria23" aria-describedby="helpId" pattern="(?=.*[a-zA-Z])(?=.*\d)[a-zA-Z0-9]{5,}">            
           </div>
         </div>
 
         <div class="mb-3 form-row align-items-center">
           <label for="rut" class="col-auto col-form-label text-truncate pb-4 px-5">RUT</label>
           <div class="col">
-            <input type="text" name="rut" id="rut" class="form-control" placeholder="Ej: 12123456-8" aria-describedby="helpId" pattern="\d{8}-[0-9kK]" Required>
-            <small id="helpId" class="text-muted">Sin puntos, con guión y dígito verificador</small>
+            <input type="text" name="rut" id="rut" class="form-control" placeholder="Ej: 12123456-8" aria-describedby="helpId" pattern="\d{8}-[0-9kK]">           
           </div>
         </div>
 
         <div class="mb-3 form-row align-items-center">
           <label for="email" class="col-auto col-form-label text-truncate pb-4 px-5">Email</label>
           <div class="col">
-            <input type="email" name="email" id="email" class="form-control" placeholder="Ej: maria@gmail.com " aria-describedby="helpId" placeholder="Ej: maria@gmail.com" aria-describedby="helpId" Required>
-            <small id="helpId" class="text-muted">Ingrese su correo</small>
+            <input type="email" name="email" id="email" class="form-control" placeholder="Ej: maria@gmail.com " aria-describedby="helpId" placeholder="Ej: maria@gmail.com" aria-describedby="helpId">            
           </div>
         </div>
 
-        <div class="mb-3 form-row align-items-center">
-          <label for="region" class="col-auto col-form-label text-truncate pb-4 px-5">Región</label>
+        <div class="form-row align-items-center">
+          <label for="region" class="col-auto col-form-label text-truncate px-5">Región</label>
           <div class="col">                    
-            <select id="region" name="region" class="form-select form-select-sm custom-height" aria-label=".form-select-sm example" pattern="(?=.*[a-zA-Z])(?=.*\d)[a-zA-Z0-9]{5,}" onchange="buscar()" Required>
+            <select id="region" name="region" class="form-select form-select-sm custom-height" aria-label=".form-select-sm example" pattern="(?=.*[a-zA-Z])(?=.*\d)[a-zA-Z0-9]{5,}" onchange="buscar()">
             <option value="">Seleccione su Region</option>    
               <?php include "regiones.php"?>                       
             </select>                  
-            <small id="helpId" class="text-muted">Seleccione su Región</small>
-          </div>
+            <p id="comuna-error" class="error-message"></p>
+          </div>          
         </div>
-
-        <div class="mb-3 form-row align-items-center">
+ 
+        <div class="form-row align-items-center">       
           <label for="comuna" class="col-auto col-form-label text-truncate pb-4 px-5">Comuna</label>
           <div id="div" class="col"> 
             <div>                  
-              <select id="comuna" name="comuna" class="form-select form-select-sm custom-height" aria-label=".form-select-sm example" pattern="(?=.*[a-zA-Z])(?=.*\d)[a-zA-Z0-9]{9,}" Required>
+              <select id="comuna" name="comuna" class="form-select form-select-sm custom-height" aria-label=".form-select-sm example" pattern="(?=.*[a-zA-Z])(?=.*\d)[a-zA-Z0-9]{9,}">
                 <option value="">Seleccione su Comuna</option>              
-              </select>
-              <small id="helpId" class="text-muted">Seleccione su Comuna</small>
-            </div>                 
-          </div>
+              </select>              
+            </div>            
+          </div>          
         </div>
 
         <div class="mb-3 form-row align-items-center">
           <label for="candidato" class="col-auto col-form-label text-truncate pb-4 px-5">Candidato</label>
           <div class="col">
-            <select id="candidato" name="candidato" class="form-select form-select-sm custom-height" aria-label=".form-select-sm example" pattern="(?=.*[a-zA-Z])(?=.*\d)[a-zA-Z0-9]{5,}" Required>
+            <select id="candidato" name="candidato" class="form-select form-select-sm custom-height" aria-label=".form-select-sm example" pattern="(?=.*[a-zA-Z])(?=.*\d)[a-zA-Z0-9]{5,}">
               <option value="">Seleccione su Candidato</option>
               <?php include "candidatos.php"; ?>
-            </select>
-            <small id="helpId" class="text-muted">Seleccione su Candidato</small>
+            </select>            
           </div>
         </div>
       
-        <div class="mb-3 form-row align-items-center">
+        <div id="div_encuesta" class="mb-3 form-row align-items-center">
           <label for="inputName" class="col-auto col-form-label text-truncate pb-4 px-5">Cómo se enteró de nosotros</label>
           <div id="div_encuesta"class="col">
             <label for="web">web</label>
@@ -103,7 +98,7 @@
             <label for="amigo">Amigo</label>
               <input type="checkbox" value="amigo" name="encuesta[]" id="amigo" >
               <div>
-                <small id="helpId" class="text-muted">Debe marcar al menos dos opciones</small>                
+              <small id="encuesta"></small>            
               </div>                         
           </div>
         </div>
@@ -111,7 +106,7 @@
         <div>        
           <button type="submit" class="btn btn-primary ms-5 my-3 pt-2 w-40 m-auto" >Votar</button>  
         </div>
-
+        
       </form>   
 
     </main>

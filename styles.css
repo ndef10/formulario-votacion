@@ -1,7 +1,7 @@
 
 main {
     margin-top: 50px;
-    background-color:rgb(210, 235, 244);
+    background-color:rgb(128, 205, 233);
     border-radius: 10px;
     border: solid lightblue;     
 }
@@ -33,6 +33,29 @@ h1 {
     font-size: 15px;
 }
 
+.invalid {
+    border: solid 1px red;
+    box-shadow: 0 0 10px red;
+}
 
+.error {
+    color: red;
+}
 
- 
+.mensaje-exito {
+    color: green;
+    text-align: center;
+} 
+
+.mensaje-error {
+    color: red;
+    text-align: center;
+} 
+
+.mensaje-centrado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  

@@ -1,10 +1,5 @@
 <?php
 
-require __DIR__.'/vendor/autoload.php';
-
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
-$dotenv->load();
-
 //trae candidatos y los despliega en el options
 include("conexion.php");
 
