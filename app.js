@@ -8,22 +8,24 @@ function buscar() {
     return;
   }
 
-  let xhr = new XMLHttpRequest();
-  xhr.open("POST", "comunas.php", true);
-  xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+  fetch("comunas.php", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/x-www-form-urlencoded"
+    },
+    body: "region=" + encodeURIComponent(region)
+  })
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("div").innerHTML = data;
 
-  xhr.onload = function() {
-    if (xhr.status === 200) {
-      document.getElementById("div").innerHTML = xhr.responseText;
-
-      document.getElementById("div").addEventListener("change", function() {
-        comuna_seleccionada = this.querySelector("option:checked").getAttribute("name");      
-      });
-    }
-  };
-
-  xhr.send("region=" + encodeURIComponent(region));
+    document.getElementById("div").addEventListener("change", function() {
+      comuna_seleccionada = this.querySelector("option:checked").getAttribute("name");      
+    });
+  })
+  .catch(error => console.log('error', error));
 }
+
 
 let formulario = document.getElementById('datos_formulario');
  
@@ -100,9 +102,8 @@ formulario.addEventListener('submit', e => {
         txt.classList.add('text-danger');
         txt.classList.add('remover');
         txt.innerHTML = respuesta[resultado];
-        document.querySelector('#'+resultado).insertAdjacentElement('afterend', txt);
+        document.querySelector('#'+resultado).insertAdjacentElement('afterend', txt);                
       }
-
     }
   }).catch(error =>console.log('error', error));
 });
