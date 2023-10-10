@@ -2,8 +2,6 @@
 
 Interfáz que valida, permite emitir un voto y guardar la información ingresada en una base de datos.
 
-(Este proyecto es producto de una prueba técnica para postular a un trabajo y mi primer acercamiento a PHP)
-
 ## Requisitos previos
 
 __Antes de ejecutar el proyecto, es necesario tener instaladas las siguientes dependencias:__
